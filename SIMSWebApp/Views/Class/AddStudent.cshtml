@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Add Student to Class";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<h2>Add Student to Class</h2>
+
+<form asp-action="AddStudent" method="post">
+    <input type="hidden" name="classId" value="@ViewBag.ClassId" />
+
+    <div class="form-group">
+        <label>Select Student</label>
+        <select name="studentId" class="form-control">
+            @foreach (var s in ViewBag.Students)
+            {
+                <option value="@s.StudentID">@s.FirstName @s.LastName - @s.Email</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Add</button>
+    <a class="btn btn-secondary mt-2" href="@Url.Action("Details", "Class", new { id = ViewBag.ClassId })">Cancel</a>
+</form>
+

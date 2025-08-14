@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model SIMSWebApp.DatabaseContext.Entities.Class
+
+@{
+    ViewData["Title"] = "Class Details";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<h2>@Model.ClassName - Students</h2>
+
+@if (Model.Students != null && Model.Students.Any())
+{
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Program</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model.Students)
+            {
+                <tr>
+                    <td>@student.FirstName @student.LastName</td>
+                    <td>@student.Email</td>
+                    <td>@student.Program</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Không có sinh viên nào trong lớp này.</p>
+}
+
+<a class="btn btn-secondary" href="@Url.Action("Index", "Class")">Back</a>
+<a class="btn btn-primary ms-2" href="@Url.Action("AddStudent", "Class", new { classId = Model.ClassId })">Add Student</a>
+

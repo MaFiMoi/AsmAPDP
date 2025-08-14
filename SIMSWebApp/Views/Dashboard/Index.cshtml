@@ -1,0 +1,380 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Dashboard page";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<style>
+    /* Custom styles for BTEC notifications - won't affect other pages */
+    .btec-dashboard {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        min-height: calc(100vh - 200px);
+    }
+
+    .btec-welcome-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 30px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .btec-welcome-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+    @@keyframes shimmer {
+        0%, 100% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(180deg);
+        }
+    }
+
+    .btec-welcome-header h2 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    .btec-notification-item {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 15px;
+        border-left: 4px solid transparent;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .btec-notification-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, transparent 0%, rgba(103, 126, 234, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .btec-notification-item:hover::before {
+            opacity: 1;
+        }
+
+        .btec-notification-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(103, 126, 234, 0.15);
+        }
+
+        .btec-notification-item:nth-child(1) {
+            border-left-color: #dc3545;
+        }
+
+        .btec-notification-item:nth-child(2) {
+            border-left-color: #20c997;
+        }
+
+        .btec-notification-item:nth-child(3) {
+            border-left-color: #0d6efd;
+        }
+
+        .btec-notification-item:nth-child(4) {
+            border-left-color: #ffc107;
+        }
+
+    .btec-notification-icon {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+        font-size: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .btec-notification-icon::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            transform: rotate(-45deg);
+            transition: all 0.6s ease;
+        }
+
+    .btec-notification-item:hover .btec-notification-icon::after {
+        animation: shine 0.6s ease;
+    }
+
+    @@keyframes shine {
+        0% {
+            transform: translateX(-100%) translateY(-100%) rotate(-45deg);
+        }
+
+        100% {
+            transform: translateX(100%) translateY(100%) rotate(-45deg);
+        }
+    }
+
+    .btec-notification-date {
+        font-size: 0.85rem;
+        color: #6c757d;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .btec-notification-title {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #495057;
+        line-height: 1.4;
+        margin-bottom: 8px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .btec-notification-expired {
+        font-size: 0.8rem;
+        color: #adb5bd;
+        font-style: italic;
+    }
+
+    .btec-search-section {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        margin-top: 20px;
+    }
+
+    .btec-search-container {
+        position: relative;
+    }
+
+    .btec-search-input {
+        width: 100%;
+        padding: 12px 50px 12px 20px;
+        border: 2px solid #e9ecef;
+        border-radius: 25px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        outline: none;
+    }
+
+        .btec-search-input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(103, 126, 234, 0.25);
+        }
+
+    .btec-search-btn {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border: none;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .btec-search-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(103, 126, 234, 0.3);
+        }
+
+    .btec-pulse {
+        animation: pulse 2s infinite;
+    }
+
+    @@keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.4);
+        }
+
+        70% {
+            box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+        }
+
+        100% {
+            box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+        }
+    }
+
+    @@keyframes ripple {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+</style>
+
+<div class="container-fluid px-4 btec-dashboard">
+    <h1 class="mt-4">Dashboard</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Dashboard</li>
+    </ol>
+
+    <!-- BTEC Welcome Section -->
+    <div class="btec-welcome-header">
+        <h2>Welcome</h2>
+    </div>
+
+    <!-- Notifications Section -->
+    <div class="row">
+        <div class="col-12">
+            <div class="btec-notification-item btec-pulse">
+                <div class="d-flex">
+                    <div class="btec-notification-icon">📋</div>
+                    <div class="flex-grow-1">
+                        <div class="btec-notification-date">13/08/25 10:48</div>
+                        <div class="btec-notification-title">[BTEC EXAM]: ANNOUNCEMENT OF SECOND EXAM SUMMIT 1 ENGLISH SESSION 2025_PART 1 (EXAM DATE: 12/08/2025)</div>
+                        <div class="btec-notification-expired">Expired: 19/08/25</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btec-notification-item">
+                <div class="d-flex">
+                    <div class="btec-notification-icon">📋</div>
+                    <div class="flex-grow-1">
+                        <div class="btec-notification-date">12/08/25 10:32</div>
+                        <div class="btec-notification-title">[BTEC EXAM]: ANNOUNCEMENT OF PROGRESS TEST 2 SUBJECTS ENGLISH SUBJECTS SUMMER 2025 PART 2 SCHEDULE (EXAM DATE 11/08/2025)</div>
+                        <div class="btec-notification-expired">Expired: 18/08/25</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btec-notification-item">
+                <div class="d-flex">
+                    <div class="btec-notification-icon">📋</div>
+                    <div class="flex-grow-1">
+                        <div class="btec-notification-date">09/08/25 11:10</div>
+                        <div class="btec-notification-title">[BTEC EXAM]: ANNOUNCEMENT OF 1ST EXAM SCORES - ENGLISH SUMMIT 1 SUMMER 2025 PART 1</div>
+                        <div class="btec-notification-expired">Expired: 15/08/25</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btec-notification-item">
+                <div class="d-flex">
+                    <div class="btec-notification-icon">📋</div>
+                    <div class="flex-grow-1">
+                        <div class="btec-notification-date">08/08/25 09:11</div>
+                        <div class="btec-notification-title">Thông báo về việc nộp học phí kỳ FA2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="btec-search-section">
+        <h5 class="mb-3">More</h5>
+        <div class="btec-search-container">
+            <input type="text"
+                   class="btec-search-input"
+                   placeholder="Search for news..."
+                   id="btecSearchInput">
+            <button class="btec-search-btn" onclick="performBtecSearch()">
+                🔍
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // JavaScript for BTEC dashboard interactions
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add click interactions to notification items
+        document.querySelectorAll('.btec-notification-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                // Create ripple effect
+                const ripple = document.createElement('div');
+                ripple.style.cssText = `
+                    position: absolute;
+                    border-radius: 50%;
+                    background: rgba(103, 126, 234, 0.3);
+                    transform: scale(0);
+                    animation: ripple 0.6s linear;
+                    pointer-events: none;
+                `;
+
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+
+                this.appendChild(ripple);
+
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+
+                // Add scale effect
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = 'translateY(-3px)';
+                }, 100);
+            });
+        });
+
+        // Search functionality
+        document.getElementById('btecSearchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performBtecSearch();
+            }
+        });
+    });
+
+    function performBtecSearch() {
+        const searchInput = document.getElementById('btecSearchInput');
+        const query = searchInput.value.trim();
+
+        if (query) {
+            searchInput.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                searchInput.style.transform = 'scale(1)';
+                // Thay thế alert bằng logic tìm kiếm thực tế của bạn
+                console.log('Tìm kiếm: ' + query);
+                // Ví dụ: window.location.href = '/Search?query=' + encodeURIComponent(query);
+            }, 100);
+        }
+    }
+</script>

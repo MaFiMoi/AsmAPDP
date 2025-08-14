@@ -1,0 +1,326 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\views\\class\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\views\\class\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\views\\class\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\views\\class\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\views\\class\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\views\\class\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\views\\class\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\views\\class\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\views\\class\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\views\\class\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\views\\class\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\views\\class\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\views\\student\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\views\\student\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\databasecontext\\entities\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\databasecontext\\entities\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\databasecontext\\simsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\databasecontext\\simsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\databasecontext\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\databasecontext\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\views\\shared\\partials\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\views\\shared\\partials\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|c:\\users\\hoangmeo\\pictures\\student-management\\simswebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B161E6-8259-4D78-A53C-FEBD44468A8D}|SIMSWebApp\\SIMSWebApp.csproj|solutionrelative:simswebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "SIMSWebApp\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAiwGwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T02:14:05.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddStudent.cshtml",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\AddStudent.cshtml",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Views\\Class\\AddStudent.cshtml",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\AddStudent.cshtml",
+              "RelativeToolTip": "SIMSWebApp\\Views\\Class\\AddStudent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T02:07:49.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\Details.cshtml",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Views\\Class\\Details.cshtml",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\Details.cshtml",
+              "RelativeToolTip": "SIMSWebApp\\Views\\Class\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T02:07:22.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\Delete.cshtml",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Views\\Class\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\Delete.cshtml",
+              "RelativeToolTip": "SIMSWebApp\\Views\\Class\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T02:00:15.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Views\\Class\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\Edit.cshtml",
+              "RelativeToolTip": "SIMSWebApp\\Views\\Class\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T01:59:16.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Student\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Views\\Student\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Student\\Edit.cshtml",
+              "RelativeToolTip": "SIMSWebApp\\Views\\Student\\Edit.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAYwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T01:58:17.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Student\\Delete.cshtml",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Views\\Student\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Student\\Delete.cshtml",
+              "RelativeToolTip": "SIMSWebApp\\Views\\Student\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T01:54:56.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Views\\Student\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "SIMSWebApp\\Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T01:54:21.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Student\\Create.cshtml",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Views\\Student\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Student\\Create.cshtml",
+              "RelativeToolTip": "SIMSWebApp\\Views\\Student\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T01:53:15.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Models\\Student.cs",
+              "RelativeToolTip": "SIMSWebApp\\Models\\Student.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:47:28.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SIMSDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\DatabaseContext\\SIMSDbContext.cs",
+              "RelativeDocumentMoniker": "SIMSWebApp\\DatabaseContext\\SIMSDbContext.cs",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\DatabaseContext\\SIMSDbContext.cs",
+              "RelativeToolTip": "SIMSWebApp\\DatabaseContext\\SIMSDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:43:45.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\DatabaseContext\\Entities\\Class.cs",
+              "RelativeDocumentMoniker": "SIMSWebApp\\DatabaseContext\\Entities\\Class.cs",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\DatabaseContext\\Entities\\Class.cs",
+              "RelativeToolTip": "SIMSWebApp\\DatabaseContext\\Entities\\Class.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:29:38.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\DatabaseContext\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "SIMSWebApp\\DatabaseContext\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\DatabaseContext\\Entities\\User.cs",
+              "RelativeToolTip": "SIMSWebApp\\DatabaseContext\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:28:34.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\Create.cshtml",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Views\\Class\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\Create.cshtml",
+              "RelativeToolTip": "SIMSWebApp\\Views\\Class\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T01:16:26.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\Index.cshtml",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Views\\Class\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Class\\Index.cshtml",
+              "RelativeToolTip": "SIMSWebApp\\Views\\Class\\Index.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwCwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T01:15:50.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClassController.cs",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Controllers\\ClassController.cs",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Controllers\\ClassController.cs",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Controllers\\ClassController.cs",
+              "RelativeToolTip": "SIMSWebApp\\Controllers\\ClassController.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAADwv+AAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:10:17.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Sidebar.cshtml",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Shared\\Partials\\_Sidebar.cshtml",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Views\\Shared\\Partials\\_Sidebar.cshtml",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Views\\Shared\\Partials\\_Sidebar.cshtml",
+              "RelativeToolTip": "SIMSWebApp\\Views\\Shared\\Partials\\_Sidebar.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T01:06:19.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "SIMSWebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\HOANGMEO\\Pictures\\Student-Management\\SIMSWebApp\\Program.cs",
+              "RelativeToolTip": "SIMSWebApp\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwDQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T00:44:06.971Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

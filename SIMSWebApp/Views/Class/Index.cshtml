@@ -1,0 +1,48 @@
+﻿@model IEnumerable<SIMSWebApp.DatabaseContext.Entities.Class>
+
+@{
+    ViewData["Title"] = "Class List";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<div class="container px-4">
+    <h1>Class List</h1>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+
+    <p>
+        <a class="btn btn-primary" href="@Url.Action("Create", "Class")">Add New Class</a>
+    </p>
+
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Class Name</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cls in Model)
+            {
+                <tr>
+                    <td>@cls.ClassName</td>
+                    <td>@cls.Description</td>
+                    <td>
+                        <a class="btn btn-info btn-sm" href="@Url.Action("Details", "Class", new { id = cls.ClassId })">View Students</a>
+                        <a class="btn btn-success btn-sm ms-1" href="@Url.Action("AddStudent", "Class", new { classId = cls.ClassId })">Add Student</a>
+                        <a class="btn btn-warning btn-sm ms-1" href="@Url.Action("Edit", "Class", new { id = cls.ClassId })">Edit</a>
+                        <a class="btn btn-danger btn-sm ms-1" href="@Url.Action("Delete", "Class", new { id = cls.ClassId })">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

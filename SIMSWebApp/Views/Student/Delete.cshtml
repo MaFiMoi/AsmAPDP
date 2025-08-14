@@ -1,0 +1,18 @@
+﻿@model SIMSWebApp.Models.Student
+@{
+    ViewData["Title"] = "Delete Student";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<h2>Delete Student</h2>
+
+<h4>Bạn có chắc muốn xóa sinh viên này?</h4>
+<div>
+    <strong>@Model.FirstName @Model.LastName</strong> - @Model.Email
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="StudentID" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

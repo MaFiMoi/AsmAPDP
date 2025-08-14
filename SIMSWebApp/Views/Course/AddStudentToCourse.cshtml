@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Add Student To Course";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<h2>Add Student To Course</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<form asp-action="AddStudentToCourse" method="post">
+    <div class="mb-3">
+        <label for="studentId" class="form-label">Select Student</label>
+        <select id="studentId" name="studentId" class="form-select" required>
+            <option value="">-- Select Student --</option>
+            @foreach (var student in (SelectList)ViewBag.Students)
+            {
+                <option value="@student.Value">@student.Text</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="courseId" class="form-label">Select Course</label>
+        <select id="courseId" name="courseId" class="form-select" required>
+            <option value="">-- Select Course --</option>
+            @foreach (var course in (SelectList)ViewBag.Courses)
+            {
+                <option value="@course.Value">@course.Text</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Student to Course</button>
+</form>
+

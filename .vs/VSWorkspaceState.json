@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SIMSWebApp",
+    "\\SIMSWebApp\\Controllers",
+    "\\SIMSWebApp\\Views",
+    "\\SIMSWebApp\\Views\\Shared",
+    "\\SIMSWebApp\\Views\\Shared\\Partials"
+  ],
+  "SelectedNode": "\\SIMSWebApp\\Views\\Shared\\Partials\\_Sidebar.cshtml",
+  "PreviewInSolutionExplorer": false
+}

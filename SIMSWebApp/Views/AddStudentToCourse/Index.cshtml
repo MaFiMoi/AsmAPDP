@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Add Student To Course";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<div class="container px-4">
+    <h1>Add Student To Course</h1>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+
+    <form method="post">
+        <div class="mb-3">
+            <label for="studentId" class="form-label">Chọn sinh viên</label>
+            <select class="form-select" id="studentId" name="studentId" required>
+                <option value="">-- Chọn sinh viên --</option>
+                @foreach (var student in ViewBag.Students)
+                {
+                    <option value="@student.StudentID">@student.FirstName @student.LastName</option>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="courseId" class="form-label">Chọn khóa học</label>
+            <select class="form-select" id="courseId" name="courseId" required>
+                <option value="">-- Chọn khóa học --</option>
+                @foreach (var course in ViewBag.Courses)
+                {
+                    <option value="@course.CourseID">@course.CourseName</option>
+                }
+            </select>
+        </div>
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="text-danger">
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <p>@error.ErrorMessage</p>
+                }
+            </div>
+        }
+
+        <button type="submit" class="btn btn-primary">Thêm</button>
+    </form>
+</div>
